@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Resume Screening</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Job Description</h2>
+            <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
+            
+            <h2>Upload Resumes</h2>
+            <input type="file" id="resumeUpload" multiple accept=".pdf,.doc,.docx,.txt">
+            <button id="screenButton">Screen Resumes</button>
+        </div>
+        
+        <div class="results-section">
+            <h2>Screening Results</h2>
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
